@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Metal+Mania&family=Noto+Sans+TC:wght@400;500&family=Nova+Square&display=swap');
+body{
+	background-color: #CDCDCD;
+	margin: 0;
+}
+#container{
+	width: 1200px;
+	height: 750px;
+	background: url("tank.jpg");
+	margin: 20px auto;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 0 5px #000000;
+	position: relative;
+	transition: background 1s;
+}
+h1{
+	width: 100%;
+	text-align: center;
+	color: #383838;
+	font-size: 100px;
+	font-family: "Nova Square", cursive;
+	text-shadow: 3px 3px 10px #888888;
+	margin: 0;
+	position: absolute;
+	top: 90px;
+}
+#start, #result{
+	width: 300px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	font-family: "Metal Mania", cursive;
+	background-color: #FFFFFF;
+	border: 5px solid #A8A8A8;
+	border-radius: 15px;
+	position: absolute;
+	top: 295px;
+	left: 445px;
+}
+#start{
+	line-height: 150px;
+	font-size: 75px;
+}
+#result{
+	line-height: 75px;
+	font-size: 45px;
+}
+#rule, #restart{
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 50px;
+	font-family: "Metal Mania", cursive;
+	background-color: #FFFFFF;
+	border: 5px solid #A8A8A8;
+	border-radius: 10px;
+	position: absolute;
+	top: 475px;
+	left: 495px;
+}
+#ruleText{
+	width: 1000px;
+	height: 600px;
+	font-size: 28px;
+	font-family: "Noto Sans TC", sans-serif;
+	background-color: rgba(255,255,255,0.8);
+	box-sizing: border-box;
+	border: 1px solid #AAAAAA;
+	border-radius: 10px;
+	padding: 20px;
+	position: absolute;
+	top: 75px;
+	left: 100px;
+	z-index: -1;
+	opacity: 0;
+	transition:  z-index 1s, opacity 1s;
+}
+#undo, #setting{
+	font-size: 60px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+#setting{
+	transition: transform 1s;
+}
+#menu{
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	top: 100px;
+	right: 20px;
+}
+.mode{
+	width: 190px;
+	height: 90px;
+	line-height: 87px;
+	text-align: left;
+	font-size: 30px;
+	font-family: "Noto Sans TC", sans-serif;
+	box-sizing: border-box;
+	margin: 5px;
+	border: 1.5px dashed #383838;
+	border-radius: 10px;
+	padding-left: 15px;
+	position: relative;
+}
+input[type="checkbox"]{
+	width: 25px;
+	height: 25px;
+	line-height: 100px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+#start:hover, #rule:hover, #restart:hover{
+	color: #FFFFFF;
+	background-color: #A8A8A8;
+	border: 5px solid #585858;
+	cursor: pointer;
+}
+#undo:hover, #setting:hover{
+	color: #FF0000;
+	cursor: pointer;
+}
+#score{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: right;
+	font-size: 50px;
+	font-family: "Electrolize", sans-serif;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#lifeBlock{
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	top: 700px;
+	right: 0px;
+}
+#heart{
+	color: #FF0000;
+	font-size: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#lifeNumber{
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 40px;
+	font-family: "Electrolize", sans-serif;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.Block{
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+	font-size: 50px;
+	font-family: "Electrolize", sans-serif;
+	box-sizing: border-box;
+	border: 1px dashed #000000;
+	border-radius: 10px;
+	opacity: 0.15;
+	position: absolute;
+}
+#B1{
+	top: 0;
+	left: 0;
+}
+#B2{
+	top: 0;
+	left: 1000px;
+}
+#B3{
+	top: 550px;
+	left: 0;
+}
+#B4{
+	top: 550px;
+	left: 1000px;
+}

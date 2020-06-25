@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tank Game</title>
+		<link rel="stylesheet" type="text/css" href="project/Interface.css">
+		<link rel="stylesheet" type="text/css" href="project/GameElement.css">
+		<script src="https://kit.fontawesome.com/b30612614d.js" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var result=document.getElementById("result");
+				result.style.display="none";
+				var menu=document.getElementById("menu");
+				menu.style.display="none";
+				var restart=document.getElementById("restart");
+				restart.style.display="none";
+				var undo=document.getElementById("undo");
+				undo.style.display="none";
+				var score=document.getElementById("score");
+				score.style.display="none";
+				var lifeBlock=document.getElementById("lifeBlock");
+				lifeBlock.style.display="none";
+				var warning=document.getElementById("warning");
+				warning.style.display="none";
+			};
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<h1 id="gameName">Tank and Bomb</h1>
+			<div id="start">START</div>
+			<div id="result"></div>
+			<div id="rule">RULE</div>
+			<i class="fas fa-cog" id="setting"></i>
+			<div id="menu">
+				<div class="mode"><input type="checkbox" id="easy">EASY</div>
+				<div class="mode"><input type="checkbox" id="medium">MEDIUM</div>
+				<div class="mode"><input type="checkbox" id="hard">HARD</div>
+			</div>
+			<div id="restart">RESTART</div>
+			<!-- for rule interface -->
+			<i class="fas fa-undo" id="undo"></i>
+			<div id="ruleText">
+				<strong>遊戲規則：</strong>
+				<br><blockquote>
+				玩家可以藉由 W、A、S、D 鍵移動 2D 坦克<br>
+				並移動滑鼠來瞄準炸彈<br>
+				只要按下滑鼠左鍵即可發射砲彈<br><br>
+				每一個炸彈都有所需要攻擊的次數<br>
+				炸彈會隨著剩餘次數越少而變小<br>
+				只要數字歸零即會消失<br><br>
+				每消除一個炸彈即可獲得 50 / 75 / 100 分<br>
+				一但被炸彈打到即會失去一個生命值<br>
+				生命值歸零時遊戲結束
+			</div>
+			<!-- for game interface -->
+			<div id="score"></div>
+			<div id="lifeBlock">
+				<i class="fas fa-heart" id="heart"></i>
+				<div id="lifeNumber"></div>
+			</div>
+			<div id="warning">
+				<div class="Block" id="B1">Bomb</div>
+				<div class="Block" id="B2">Bomb</div>
+				<div class="Block" id="B3">Bomb</div>
+				<div class="Block" id="B4">Bomb</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="project/TankGame.js"></script>
+	</body>
+</html>

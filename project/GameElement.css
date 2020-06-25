@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
+.tank{
+	width: 100px;
+	height: 100px;
+	background-color: #008800;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #000000;
+	position: absolute;
+}
+.tankBody{
+	width: 80px;
+	height: 80px;
+	background-color: #008800;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #000000;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.gun{
+	width: 150px;
+	height: 20px;
+	position: absolute;
+	top: 40px;
+	left: -25px;
+}
+.gunBody{
+	width: 80px;
+	height: 20px;
+	background-color: #008800;
+	box-shadow: 0 0 5px #000000;
+	border-radius: 5px;
+	position: absolute;
+	top: 0px;
+	left: 70px;
+}
+.obstacle{
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #000000;
+	font-family: "Lexend Tera", sans-serif;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #AA6F6F;
+	position: absolute;
+}
+.bullet{
+	width: 20px;
+	height: 20px;
+	background-color: #AA0000;
+	border-radius: 50%;
+	position: absolute;
+}
